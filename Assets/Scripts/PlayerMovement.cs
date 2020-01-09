@@ -6,8 +6,16 @@ public class PlayerMovement : MonoBehaviour
 {
     public Transform cam;
 
+    private bool[] KeyInputs;
+
+    public Animator anim;
     Vector2 input;
-  
+
+    private void Start()
+    {
+        
+    }
+
     private void FixedUpdate()
     {
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
@@ -19,7 +27,9 @@ public class PlayerMovement : MonoBehaviour
         camR.y = 0;
         camF = camF.normalized;
         camR = camR.normalized;
+
         
+
         transform.position+=(camF*input.y +camR*input.x)*Time.deltaTime*5;
     }
 }
