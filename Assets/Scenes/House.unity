@@ -1270,7 +1270,7 @@ MonoBehaviour:
   target: {fileID: 631752005}
   smoothTime: 0.3
   CamX: -5
-  CamY: 5
+  CamY: 2.5
   CamZ: -5
 --- !u!1 &325703434
 GameObject:
