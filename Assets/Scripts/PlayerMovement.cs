@@ -28,7 +28,10 @@ public class PlayerMovement : MonoBehaviour
         camF = camF.normalized;
         camR = camR.normalized;
 
-        
+
+
+        anim.SetFloat("MoveX", input.x);
+        anim.SetFloat("MoveY", input.y);
 
         transform.position+=(camF*input.y +camR*input.x)*Time.deltaTime*5;
     }
