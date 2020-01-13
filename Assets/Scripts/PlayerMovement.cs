@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
     private bool[] KeyInputs;
 
     public Animator anim;
+    public Animator aimAnim;
+
+    public GameObject muzzle;
+    public GameObject testSphere;
+    public GameObject muzzleRot;
     Vector2 input;
 
     private void Start()
@@ -28,7 +33,15 @@ public class PlayerMovement : MonoBehaviour
         camF = camF.normalized;
         camR = camR.normalized;
 
+        muzzleRot.transform.position = transform.position;
 
+        aimAnim.SetFloat("MoveX", input.x);
+        aimAnim.SetFloat("MoveY", input.y);
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Instantiate(testSphere,muzzle.transform.position, Quaternion.identity);
+        }
 
         anim.SetFloat("MoveX", input.x);
         anim.SetFloat("MoveY", input.y);
