@@ -38,10 +38,7 @@ public class PlayerMovement : MonoBehaviour
         aimAnim.SetFloat("MoveX", input.x);
         aimAnim.SetFloat("MoveY", input.y);
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Instantiate(testSphere,muzzle.transform.position, Quaternion.identity);
-        }
+        
 
         anim.SetFloat("MoveX", input.x);
         anim.SetFloat("MoveY", input.y);
