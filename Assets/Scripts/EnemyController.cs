@@ -19,17 +19,8 @@ public class EnemyController : MonoBehaviour
     public void LoseHealth()
     {
         Health = Health - 1;
-        StartCoroutine("AnimDelay");
-    }
-
-    IEnumerator AnimDelay(float time)
-    {
-        time = 1f;
 
         enemyAnim.SetBool("IsHit", true);
-        
-        yield return new WaitForSeconds(time);
-        
-        enemyAnim.SetBool("IsHit", false);
     }
+
 }

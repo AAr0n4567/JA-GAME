@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 190382089}
   m_Layer: 0
   m_Name: Test Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 10
-  enemyAnim: {fileID: 0}
+  enemyAnim: {fileID: 190382089}
 --- !u!136 &190382085
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ PrefabInstance:
     - target: {fileID: 8475048853757672110, guid: 8d65690fda2ef9b48b7b7e25a591ec67,
         type: 3}
       propertyPath: dodgeForce
-      value: 4.5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8475048855067582669, guid: 8d65690fda2ef9b48b7b7e25a591ec67,
         type: 3}

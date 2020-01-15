@@ -14,7 +14,8 @@ public class PlayerMelee : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Enemy.LoseHealth();
+                Debug.Log("Player Attack");
+                Enemy.Health = Enemy.Health - 1;
             }
         }
     }
