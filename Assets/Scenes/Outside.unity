@@ -726,6 +726,21 @@ PrefabInstance:
       propertyPath: dodgeForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8475048853757672110, guid: 8d65690fda2ef9b48b7b7e25a591ec67,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8475048853757672110, guid: 8d65690fda2ef9b48b7b7e25a591ec67,
+        type: 3}
+      propertyPath: dodgeCooldown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8475048853757672110, guid: 8d65690fda2ef9b48b7b7e25a591ec67,
+        type: 3}
+      propertyPath: dodgeFrame
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8475048855067582669, guid: 8d65690fda2ef9b48b7b7e25a591ec67,
         type: 3}
       propertyPath: m_LocalPosition.z
